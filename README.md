@@ -1,4 +1,5 @@
-#Just a few commands to help in my coding (for windows cmd only)
+#Just a few commands to help in my coding
+###(for windows cmd only)
 
 ##Commands: 
 
