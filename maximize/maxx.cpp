@@ -27,8 +27,21 @@ can do where max in cmd
  
 int main()
 {
-	LPCSTR windowName = "Command Prompt"; // this changes to select Command Prompt when u r selecting in cmd
-	ShowWindow(FindWindow(0, windowName), SW_MAXIMIZE);
-    
-	return 0;
-}
+	LPCSTR windowNames[4] = {
+								"Command Prompt",
+								"C:\\Windows\\system32\\cmd.exe",
+								"Select Command Prompt",
+								"Select C:\\Windows\\system32\\cmd.exe"
+							};  // arranged my most likely						 
+						 
+	for (int i = 0; i < 4; i++)
+	{
+		if (FindWindow(0, windowNames[i])) // if window found [return type of FindWindow is HWND (window handle)]
+		{
+			ShowWindow(FindWindow(0, windowNames[i]), SW_MAXIMIZE); // maximize the window
+			return 0; // exit main
+		}
+	}
+	
+	return 0; // window not found, exit :(
+}	
