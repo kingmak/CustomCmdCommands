@@ -21,6 +21,8 @@ start minn.exe
 
 ////////////////////////////////////////////////////////////////////
 command is min
+maxx.exe is placed in C:\Windows\System32\
+can do where max in cmd
 */
  
 int main()
@@ -28,5 +30,5 @@ int main()
 	LPCSTR windowName = "Command Prompt"; // this changes to select Command Prompt when u r selecting in cmd
 	ShowWindow(FindWindow(0, windowName), SW_MAXIMIZE);
     
-  return 0;
-}	
+	return 0;
+}
