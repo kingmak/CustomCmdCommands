@@ -43,5 +43,5 @@ int main()
 		}
 	}
 	
-	return 0; // window not found, exit :(
+	return 0; // window not found, exit :(-
 }	
